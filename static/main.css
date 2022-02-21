@@ -4,7 +4,40 @@ body {
 
 #login_frame{
       background-color: rgba(72, 73, 74, 0.1);
-      margin: 125px 500px;
-      width: 400px;
-      height: 500px;
+      margin: 150px 700px;
+      width: 500px;
+      height: 600px;
+}
+
+
+#username{
+     width: 200px;
+     height: 25px;
+     margin-left: 140px;
+     margin-top: 300px;
+     background-color: rgba(72, 73, 74, 0.1);
+     border-width: 1px flat;
+}
+
+#password{
+     width: 200px;
+     height: 25px;
+     margin-left: 140px;
+     margin-top: 10px;
+     background-color: rgba(72, 73, 74, 0.1);
+     border-width: 1px flat;
+}
+#login{
+      width: 100px;
+      height: 50px;
+      padding: 4px 12px;
+      margin-left: 139px;
+      margin-top: 30px;
+}
+
+#signup{
+      width: 100px;
+      height: 50px;
+      padding: 4px 8px;
+      margin-left: 1px;
 }

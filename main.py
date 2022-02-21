@@ -5,4 +5,4 @@ vac = Flask(__name__)
 
 @vac.route('/')
 def home_Page():
-    return "Hello Python"
+    return render_template('index.html')

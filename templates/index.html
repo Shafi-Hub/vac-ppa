@@ -8,9 +8,8 @@
 
 </head>
 <body>
-    <img src="/root/Desktop/PythonProjects/FlaskProjects/vac-ppa/images/LoginPageImage.jpg" alt="Login Page Image">
     <div id="login_frame">
-        <img id="emplom" src="/root/Desktop/PythonProjects/FlaskProjects/vac-ppa/images/emplom.png"><br>
+        <img id="emplom" src="{{ url_for('static', filename='/images/emplom.png') }}"/><br>
         <input type="text" id="username" name="user"><br>
         <input type="password" id="password" name="passwd"><br>
         <button id="login_btn" name="login">Login</button>

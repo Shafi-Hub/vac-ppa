@@ -8,10 +8,10 @@ body {
       height: 400px;
 }
 #emplom{
-      width: 140px;
-      height: 150px;
-      margin-left: 31%;
-      margin-top: 10%;
+      width: 215px;
+      height: 230px;
+      margin-left: 22%;
+      margin-top: 0%;
 }
 
 #username{
@@ -19,8 +19,8 @@ body {
      height: 28px;
      font-family: Times New Roman;
      font-size: 16px;
-     margin-left: 22%;
-     margin-top: 8%;
+     margin-left: 23%;
+     margin-top: 0%;
      background-color: rgba(72, 73, 74, 0.1);
      border-radius: 25px;
      border-width: 1px flat;
@@ -31,7 +31,7 @@ body {
      height: 28px;
      font-family: Times New Roman;
      font-size: 16px;
-     margin-left: 22%;
+     margin-left: 23%;
      margin-top: 2%;
      background-color: rgba(72, 73, 74, 0.1);
      border-radius: 25px;
@@ -41,8 +41,8 @@ body {
       width: 100px;
       height: 50px;
       padding: 4px 12px;
-      margin-left: 22%;
-      margin-top: 4%;
+      margin-left: 23%;
+      margin-top: 5%;
 }
 
 #signup_btn{

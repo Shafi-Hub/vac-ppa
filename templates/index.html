@@ -8,12 +8,20 @@
 
 </head>
 <body>
+    <div id="homepage_head">
+        <h1> Vaidyaratnam Ayurveda College & Hospital </h1>
+    </div>
     <div id="login_frame">
-        <img id="emplom" src="{{ url_for('static', filename='/images/emplom.png') }}"/><br>
-        <input type="text" id="username" name="user"><br>
-        <input type="password" id="password" name="passwd"><br>
-        <button id="login_btn" name="login">Login</button>
-        <button id="signup_btn"  name="signup"> Sign Up </button>
+       <img id="emplom" src="{{ url_for('static', filename='/images/emplom.png') }}"/><br>
+         <form>
+            <input type="text"  id="username" name="user"><br>
+            <input type="password" id="password" name="passwd"><br>
+            <button type="submit" id="login_btn" name="login">Login</button>
+            <button type="submit" id="signup_btn" formaction="{{ url_for('signup_') }}" name="signup"> Sign Up </button>
+         </form>
+    </div>
+    <div id="homepage_footer">
+        <p><marquee scrollamount="6" >!!! This is a trail statement, please co-operate with us....!!! if you have any queries please contact IT Administrator... !!! MUHAMMED SHAFI- 9633442041</marquee></p>
     </div>
 
 

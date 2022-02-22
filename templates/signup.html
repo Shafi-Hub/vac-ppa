@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='signup.css') }}">
+</head>
+<body>
+   <main>
+       <article>
+           <section>
+               <div id="signup_head" >
+                   <h2 style="color: white;  text-shadow: 2px 2px 2px grey; text-align: center; height: 4%;"> User Registration </h2>
+               </div>
+               <div id="signup_content">
+                 <form>
+                   <h3 style="text-align: center; color: white; margin: 4%;"> Personal Details</h3><br>
+                   <label for='fname' id='F_name_label' class="lbl"> First Name :</label>
+                   <input type="text" name="fname" class="txt">
+                   <label for='dob' id='Address' class="lbl2"> Date of Birth :</label>
+                   <input type="text" name="dob" class="txt2"><br><br><br>
+                   <label for='lname' id='L_name_label' class="lbl"> Last Name :</label>
+                   <input type="text" name="lname" class="txt">
+                   <label for='dob' id='Address' class="lbl2"> Date of Birth :</label>
+                   <input type="text" name="dob" class="txt2"><br><br><br>
+                   <label for='hname' id='H_name_label' class="lbl"> House Name :</label>
+                   <input type="text" name="hname" class="txt">
+                   <label for='dob' id='Address' class="lbl2"> Date of Birth :</label>
+                   <input type="text" name="dob" class="txt2"><br><br><br>
+                   <label for='fath_name' id='Fath_name_labe2' class="lbl"> Father's Name :</label>
+                   <input type="text" name="fath_name" class="txt">
+                   <label for='dob' id='Address' class="lbl2"> Date of Birth :</label>
+                   <input type="text" name="dob" class="txt2"><br><br><br>
+                   <label for='moth_name' id='Moth_name_label' class="lbl"> Mother's Name :</label>
+                   <input type="text" name="moth_name" class="txt">
+                   <label for='dob' id='Address' class="lbl2"> Date of Birth :</label>
+                   <input type="text" name="dob" class="txt2"><br><br><br>
+                   <label for='place_of_birth' id='birth_place' class="lbl"> Place of Birth :</label>
+                   <input type="text" name="place_of_birth" class="txt">
+                   <label for='dob' id='Address' class="lbl2"> Date of Birth :</label>
+                   <input type="text" name="dob" class="txt2"><br><br><br>
+                   <button type="submit" id="back" formaction="{{ url_for('home_page_') }}" name="back_btn"> Back</button>
+                   <button type="submit" id="next" name="next_btn"> Next </button>
+                </form>
+
+
+
+
+
+               </div>
+           </section>
+       </article>
+   </main>
+
+</body>
+</html>

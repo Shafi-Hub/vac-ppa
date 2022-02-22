@@ -1,0 +1,72 @@
+body {
+      background-color: rgb(54, 69, 60);
+      width: 85%;
+      height: 570px;
+      border-width: 3px solid;
+      box-shadow: 10px 10px 50px black;
+      border-radius: 40px;
+      margin: 1% 6%;
+      padding: 2px 1px;
+
+}
+
+#signup_head {
+      margin-left: 25%;
+      left: 25%;
+      width: 45%;
+      height: 7%;
+      text-align: center;
+      box-shadow: 2px 6px 10px black;
+}
+
+.lbl{
+     color: white;
+     width: 15%;
+     height: 2%;
+     text-shadow: 2px 2px black;
+     position: absolute;
+     font-weight: bold;
+     left: 12%;
+
+ }
+
+ .lbl2{
+     color: white;
+     width: 15%;
+     height: 2%;
+     text-shadow: 2px 2px black;
+     position: absolute;
+     font-weight: bold;
+     left: 57%;
+
+ }
+
+.txt {
+     width: 15%;
+     height: 2%;
+     position: absolute;
+     font-weight: bold;
+     left: 25%;
+     top: 18%
+     margin: 1%;
+}
+
+.txt2 {
+     width: 15%;
+     height: 2%;
+     position: absolute;
+     font-weight: bold;
+     left: 70%;
+     top: 18%
+     margin: 1%;
+}
+
+button{
+      width: 8%;
+      height: 6%;
+      padding: .25% 1%;
+      position: relative;
+      top: 84%;
+      left: 42%;
+      font-weight: bold;
+}

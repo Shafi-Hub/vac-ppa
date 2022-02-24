@@ -17,10 +17,13 @@
                    <h3 style="text-align: center; color: white; margin: 4%;"> Personal Details</h3><br>
                    <label for='fname' id='fname_label' class="lbl"> First Name : </label>
                    <input type="text" id="fname" name="fname_input" class="txt">
+
                    <label for='dob' id='dob_label' class="lbl2"> Date of Birth / </label>
-                   <input type="date" id="dob" name="dob_input" class="txt2" style="width: 10%;">
+                   <input type="date" id="dob" name="dob_input" class="dt">
+
                    <label for='age' id='age_label' class="lbl2" style="left: 66%;"> Age : </label>
-                   <input type="text" id="age" name="dob_input" class="txt2" style="width: 3%; left: 83%;"><br><br><br>
+                   <input type="text" id="age" name="dob_input" class="txt2" style="width: 3%; left: 81.5%;"><br><br><br>
+
                    <label for='lname' id='lname_label' class="lbl"> Last Name : </label>
                    <input type="text" id='lname' name="lname_input" class="txt">
                    <label for='pob' id='pob_label' class="lbl2"> Place of Birth : </label>
@@ -28,14 +31,16 @@
                    <label for='fath_name' id='fath_name_label' class="lbl"> Father's Name : </label>
                    <input type="text" id="fath_name" name="fath_name_input" class="txt">
                    <label for='bloodgrp' id='bloodgrp_label' class="lbl2"> Blood Group : </label>
-                   <select id="bloodgrp" name="bloodgrp_input" class="select_tab" style="left: 75.25%; width: 19%; padding: .5% .1%;">
-
+                   <select id="bloodgrp" name="bloodgrp_input" class="select_tab" style="left: 75.40%; width: 16.75%; padding: .3% .1%;">
                    </select><br><br><br>
                    <label for='moth_name' id='moth_name_labl' class="lbl"> Mother's Name </label>
                    <input type="text" id="moth_name" name="moth_name_input" class="txt">
-                   <label for='gender' id='gender_label' class="lbl2"> Gender : </label>
-                   <input type="radio" id="gender" name="gender_input" class="txt2"><br><br><br>
 
+                   <label id='gender_label' class="lbl2"> Gender : </label>
+                   <input type="radio" id="gender_male" name="gender_input_male" class="rdo" >
+                   <label for="gender_male" id='gender_male_label' class="rdo_label"> Male </label>
+                   <input type="radio"  id="gender_female" name="gender_input_female" class="rdo2" >
+                    <label for="gender_female" id='gender_female_label' class="rdo_label2"> Female </label><br><br><br>
 
                    <label for='religion' id='religion_label' class="lbl" > Religion / </label>
                      <select name="religion_select" id="religion" class="select_tab">
@@ -45,16 +50,22 @@
                          <option value="CHRISTIAN">Christian</option>
                          <option value="OTHERS">Others</option>
                      </select>
-                   <label for='caste' id='caste_label' class="lbl" style="left: 19%;"> Caste : </label>
-                      <select name="caste_select" id="caste" class="select_tab" style="left: 21%;">
+
+                   <label for='caste' id='caste_label' class="lbl" style="left: 17%;"> Caste : </label>
+                      <select name="caste_select" id="caste" class="select_tab" style="left: 19.2%;">
                          <option> Select </option>
                          <option value="MUSLIM"> Muslim </option>
                          <option value="NAIR"> Nair</option>
                          <option value="EZHAVA"> Ezhava </option>
                          <option value="OTHERs">Others</option>
                       </select>
-                   <label for='maritalstatus' id='maritalstatus_label' class="lbl2"> Marital Status : </label>
-                   <input type="radio" id="maritalstatus" name="maritalstatus_input" class="txt2"><br><br><br>
+
+                   <label id='maritalstatus_label' class="lbl2"> Marital Status : </label>
+                   <input type="radio" id="maritalstats_single" name="rdo_single" class="rdo" style="left: 59.9%;">
+                   <label for='maritalstats_single' id='maritalstatus_Single_label' class="rdo_label" style="left: 60.3%;"> Single </label>
+                   <input type="radio" id="maritalstats_married" name="rdo_married" class="rdo2" style="left: 61.9%;" >
+                   <label for="maritalstats_married" id='maritalstatus_married_label' class="rdo_label2" style="left: 62.2%;"> Married </label><br><br><br>
+
                    <button type="submit" id="back" formaction="{{ url_for('home_page_') }}" name="back_btn"> Back</button>
                    <button type="submit" id="next" name="next_btn"> Next </button>
                 </form>

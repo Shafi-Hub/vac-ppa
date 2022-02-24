@@ -1,7 +1,7 @@
 body {
       background-color: rgb(54, 69, 60);
       width: 85%;
-      height: 570px;
+      height: 660px;
       border-width: 3px solid;
       box-shadow: 10px 10px 50px black;
       border-radius: 40px;
@@ -41,7 +41,7 @@ body {
 
 .txt {
      width: 15%;
-     height: 2%;
+     height: 4%;
      position: absolute;
      font-weight: bold;
      left: 25%;
@@ -51,21 +51,38 @@ body {
 
 .txt2 {
      width: 15%;
-     height: 2%;
+     height: 4%;
      position: absolute;
      font-weight: bold;
      left: 70%;
-     top: 18%
+     top: 10%
      margin: 1%;
 }
+
+.select_tab{
+     font-family: Times New Roman;
+     width: 15%;
+     text-align: center;
+     padding: 1% 1%;
+     border-radius: 20px;
+     position: relative;
+     top: 18%;
+     left: 25%;
+     font-weight: bold;
+     font-size:  100%;
+     margin: -1%;
+
+}
+
 
 button{
       width: 8%;
       height: 6%;
-      padding: .25% 1%;
+      padding: 1% 2%;
       position: relative;
-      top: 84%;
+      top: 80%;
       left: 42%;
+      margin-top: 5%;
       font-weight: bold;
       box-shadow: 2px 2px 2px black;
 }

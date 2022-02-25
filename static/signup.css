@@ -1,7 +1,7 @@
 body {
       background-color: rgb(54, 69, 60);
       width: 85%;
-      height: 85%;
+      height: 80%;
       border-width: 3px solid;
       box-shadow: 10px 10px 50px black;
       border-radius: 40px;
@@ -25,7 +25,7 @@ body {
      text-shadow: 2px 2px black;
      position: absolute;
      font-weight: bold;
-     left: 12%;
+     left: 14%;
 
  }
 
@@ -36,30 +36,32 @@ body {
      text-shadow: 2px 2px black;
      position: absolute;
      font-weight: bold;
-     left: 59%;
+     left: 57%;
 
  }
 
 .txt {
-     width: 14%;
-     height: 3.25%;
+     width: 13%;
+     height: 3.5%;
      position: absolute;
-     left: 23%;
+     left: 27%;
      top: 18%
      font-weight: bold;
      border-radius: 10px;
+     padding: .2% .5% 0% .5%;
 
 }
 
 .txt2 {
-     width: 14%;
-     height: 3.20%;
+     width: 13%;
+     height: 3.5%;
      position: absolute;
      font-weight: bold;
      border-radius: 10px;
      left: 71%;
      top: 10%
      margin: 1%;
+     padding: .2% .5% 0% .5%;
 }
 
 .select_tab{
@@ -70,7 +72,7 @@ body {
      border-radius: 10px;
      position: relative;
      top: 18%;
-     left: 19%;
+     left: 23.5%;
      font-weight: bolder;
      font-size:  100%;
      margin top: 1%;
@@ -79,7 +81,7 @@ body {
 
 .rdo_label{
      position: relative;
-     left: 77%;
+     left: 76%;
      color: white;
      text-shadow: 2px 2px black;
      font-weight: bold;
@@ -87,7 +89,7 @@ body {
 
 .rdo_label2{
      position: relative;
-     left: 79.50%;
+     left: 78%;
      color: white;
      text-shadow: 2px 2px black;
      font-weight: bold;
@@ -95,13 +97,13 @@ body {
 
 .rdo{
      position: relative;
-     left: 76.5%;
+     left: 75.75%;
      color: black;
 
 }
 .rdo2{
      position: relative;
-     left: 79%;
+     left: 77.75%;
      color: black;
      background-color: black;
 
@@ -110,11 +112,12 @@ body {
 #dob{
     font-weight: bold;
     font-size: 15px;
-    width: 11.6%;
+    width: 11%;
     border-radius: 10px;
     padding: 1.5px 1px;
     position: relative;
-    left: 75%;
+    left: 75.4%;
+    padding: .3% .5% 0% .5%;
 }
 
 

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='signup_personal_info.css') }}">
+</head>
+<body>
+   <main>
+       <article>
+           <section>
+               <div id="signup_head" >
+                {% block heading %}
+                   <h2 style="color: white;  text-shadow: 2px 2px 2px grey; text"> User Registration </h2>
+                {% endblock %}
+               </div>
+               <div id="signup_personl_info_content" >
+                 {% block content %}
+                 <form action="{{ url_for('signup_') }}" method="POST" id="signup_personal_info_form">
+                   <h3 style="text-align: center; color: white; margin: 4%;"> Personal Details</h3><br>
+                   <label for='fname' id='fname_label' class="lbl"> First Name : </label>
+                   <input type="text" id="fname" name="fname_input" class="txt" required minlength="3" maxlength="20" >
+
+                   <label for='dob' id='dob_label' class="lbl2"> Date of Birth / </label>
+                   <input type="date" id="dob" name="dob_input" class="dt" required>
+
+                   <label for='age' id='age_label' class="lbl2" style="left: 66.8%;"> Age : </label>
+                   <input type="text" id="age" name="age_input" class="txt2" style="width: 2%; left: 81.8%;" required><br><br><br>
+
+                   <label for='lname' id='lname_label' class="lbl"> Last Name : </label>
+                   <input type="text" id='lname' name="lname_input" class="txt"  required minlength="1" maxlength="20">
+                   <label for='pob' id='pob_label' class="lbl2"> Place of Birth : </label>
+                   <input type="text" id='pob' name="pob_input" class="txt2" required minlength="3" maxlength="20"><br><br><br>
+                   <label for='fath_name' id='fath_name_label' class="lbl"> Father's Name : </label>
+                   <input type="text" id="fath_name" name="fath_name_input" class="txt" required minlength="3" maxlength="20">
+                   <label for='bloodgrp' id='bloodgrp_label' class="lbl2"> Blood Group : </label>
+                   <select id="bloodgrp" name="bloodgrp_input" class="select_tab" style="left: 75.40%; width: 16.75%; padding: .3% .1%;" required>
+                         <option value=""> Select </option>
+                         <option name="bloodgrp_input" value="a+" > A+ </option>
+                         <option name="bloodgrp_input" value="b+"> B+ </option>
+                         <option name="bloodgrp_input" value="ab+"> AB+ </option>
+                         <option name="bloodgrp_input" value="o+"> O+ </option>
+                         <option name="bloodgrp_input" value="a-"> A- </option>
+                         <option name="bloodgrp_input" value="b-"> B- </option>
+                         <option name="bloodgrp_input" value="ab-"> AB- </option>
+                         <option name="bloodgrp_input" value="o-"> O- </option>
+                   </select><br><br><br>
+                   <label for='moth_name' id='moth_name_labl' class="lbl"> Mother's Name : </label>
+                   <input type="text" id="moth_name" name="moth_name_input" class="txt" required minlength="3" maxlength="20">
+
+                   <label id='gender_label' class="lbl2"> Gender : </label>
+                   <input type="radio" id="gender_male" name="radio_gender" class="rdo" value="Male" required>
+                   <label for="gender_male" id='gender_male_label' class="rdo_label"> Male </label>
+                   <input type="radio"  id="gender_female" name="radio_gender" class="rdo2" value="Female" required>
+                   <label for="gender_female" id='gender_female_label' class="rdo_label2"> Female </label><br><br><br>
+
+                   <label for='religion' id='religion_label' class="lbl" > Religion / </label>
+                     <select name="religion_select" id="religion" class="select_tab" required>
+                         <option value=""> Select </option>
+                         <option name="religion_select"  value="ISLAM">Islam</option>
+                         <option name="religion_select" value="HINDU">Hindu</option>
+                         <option name="religion_select" value="CHRISTIAN">Christian</option>
+                         <option name="religion_select" value="OTHERS">Others</option>
+                     </select>
+
+                   <label for='caste' id='caste_label' class="lbl" style="left: 21%;"> Caste : </label>
+                      <select name="caste_select" id="caste" class="select_tab"  style="left: 23.5%;" required>
+                         <option value=""> Select </option>
+                         <option name="caste_select" value="Muslim" > MUSLIM </option>
+                         <option name="caste_select" value="Nair"> NAIR </option>
+                         <option name="caste_select" value="EZHAVA"> EZHAVA </option>
+                         <option name="caste_select" value="Others"> OTHERS </option>
+                      </select>
+
+                   <label id='maritalstatus_label' class="lbl2"> Marital Status : </label>
+                   <input type="radio" id="maritalstats_single" name="rdo_maritalstats" class="rdo" value="Single" style="left: 58.1%;" required>
+                   <label for='maritalstats_single' id='maritalstatus_Single_label' class="rdo_label" style="left: 57.8%;"> Single </label>
+                   <input type="radio" id="maritalstats_married" name="rdo_maritalstats" class="rdo2" value="Married" style="left: 54.5%;" required>
+                   <label for="maritalstats_married" id='maritalstatus_married_label' class="rdo_label2" style="left: 49.5%;"> Married </label><br><br><br>
+                 </form>
+                 {% endblock %}
+                 <form id="button_control">
+                 {% block btn_control %}
+                   <button type="submit" id="next" form="signup_personal_info_form" name="next_btn"> Next </button>
+                   <button type="submit" id="back" formaction="{{ url_for('home_page_') }}" formmethod="get" name="back_btn"> Back </button>
+                 </form>
+                 {% endblock %}
+
+
+               </div>
+
+           </section>
+       </article>
+   </main>
+   <script>
+
+   </script>
+</body>
+</html>

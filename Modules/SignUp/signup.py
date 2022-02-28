@@ -2,7 +2,7 @@ from flask import Flask, render_template, url_for, flash, redirect, request
 from markupsafe import escape
 from mysql.connector import connect
 
-mydb = connect(host='localhost', user='root', password='SHA', database='demo1')
+mydb = connect(host='localhost', user='root', password='SHA@123', database='demo1')
 mycursor = mydb.cursor()
 
 def signup_form_submit():
@@ -20,9 +20,8 @@ def signup_form_submit():
    GENDER = escape(request.form["radio_gender"])
    MARITAL_STATUS = escape(request.form["rdo_maritalstats"])
 
-   insert = '''INSERT INTO demotab(F_NAME, L_NAME, FATH_NAME, MOTH_NAME, RELIGION, CASTE, DATE_OF_BIRTH,
-                         AGE, PLACE_OF_BIRTH, BLOOD_GROUP, GENDER,MARITAL_STATUS)
-                         values(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s);'''
+   insert = '''INSERT INTO demotab(F_NAME, L_NAME, FATH_NAME, MOTH_NAME, RELIGION, CASTE, DATE_OF_BIRTH,AGE, PLACE_OF_BIRTH,
+                   BLOOD_GROUP, GENDER,MARITAL_STATUS) values(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s);'''
    val = (F_NAME, L_NAME, FATH_NAME, MOTH_NAME, RELIGION, CASTE, DATE_OF_BIRTH, AGE, PLACE_OF_BIRTH, BLOOD_GROUP, GENDER, MARITAL_STATUS)
    mycursor.execute(insert, val)
    mydb.commit()

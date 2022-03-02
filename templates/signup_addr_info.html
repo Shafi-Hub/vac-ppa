@@ -15,8 +15,8 @@
       </div>
       <div id="signup_addr_content">
         {% block content %}
-          <h2 style="text-align: center; color: white; margin: 4%;"> Address Details</h2><br>
-          <span>
+
+          <div class="left_addr_layout">
               <h3> Permanent Address </h3><br><br>
               <label for='T-H_Name' id='T-HName_label' class="lbl3"> House Name / No : </label>
               <input type="text" id="T-H_Name" name="Place_Name_input" class="txt3" ><br><br>
@@ -34,8 +34,8 @@
               <input type="text" id="T-Mobile_No" name="T-Mobile_No_input" class="txt3" ><br><br>
               <label for='T-Email_Id' id='T-Email_label' class="lbl3"> Email ID : </label>
               <input type="text" id="T-Email_Id" name="T-Email_input" class="txt3" ><br><br
-            </span>
-            <span>
+          </div>
+          <div class="right_addr_layout">
               <h3> Temporary Address </h3><br><br>
               <label for='H_Name' id='HName_label' class="lbl4"> House Name / No : </label>
               <input type="text" id="H_Name" name="Place_Name_input" class="txt4" ><br><br>
@@ -53,7 +53,7 @@
               <input type="text" id="Mobile_No" name="Mobile_No_input" class="txt4" ><br><br>
               <label for='Email_Id' id='Email_label' class="lbl4"> Email ID : </label>
               <input type="text" id="Email_Id" name="Email_input" class="txt4" ><br><br>
-            </span>
+          </div>
         {% endblock %}
       </div>
       <div>

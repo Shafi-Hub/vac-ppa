@@ -6,9 +6,8 @@ body {
       border-radius: 40px;
       margin: 1% 7%;
        padding: 2px 1px;
+      }
 
-
-}
 
 #signup_head {
       margin-left: 27%;
@@ -132,7 +131,7 @@ button{
       top: 1%;
       left: 50%;
       margin-top: .25%;
-      margin-bottom: .5%;
+      margin-bottom: 5%;
       font-weight: bold;
       box-shadow: 2px 2px 2px black;
 }

@@ -1,5 +1,5 @@
 from flask import Flask, render_template, url_for, flash, redirect, request
-from Modules.SignUp.signup import signup_form_submit
+from Modules.SignUp.signup import signup_form_Personal_info
 
 vac = Flask(__name__)
 vac.secret_key = b'shdihdwq$%%^&^%fhkhjhk&(*)&*(&^&$%%#$%$#^VKJGVJGFVGJVFJHBK'
@@ -12,7 +12,7 @@ def home_page_():
 @vac.route('/sign_up/', methods=['GET', 'POST'])
 def signup_():
     if request.method == 'POST':
-        signup_form_submit()
+        signup_form_Personal_info()
         return render_template('signup_addr_info.html')
     else:
         return render_template('signup_personal_info.html')

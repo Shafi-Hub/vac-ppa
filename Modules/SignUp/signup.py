@@ -2,10 +2,10 @@ from flask import Flask, render_template, url_for, flash, redirect, request
 from markupsafe import escape
 from mysql.connector import connect
 
-mydb = connect(host='localhost', user='root', password='SHA', database='demo1')
+mydb = connect(host='localhost', user='root', password='SHA@123', database='demo1')
 mycursor = mydb.cursor()
 
-def signup_form_submit():
+def signup_form_Personal_info():
 
    F_NAME = escape(request.form["fname_input"])
    L_NAME = escape(request.form["lname_input"])

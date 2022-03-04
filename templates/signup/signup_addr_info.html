@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='signup/signup_addr_info.css') }}">
+    <title>Registration Address</title>
+
+  </head>
+  <body>
+    {%  extends 'signup/signup_personal_info.html' %}
+      <div id="signup_addr_head" >
+        {% block heading %}
+           <h2 style="color: white;  text-shadow: 2px 2px 2px grey; text"> User Registration </h2>
+        {% endblock %}
+      </div>
+      <div id="signup_addr_content">
+        {% block content %}
+         <form id="signup_addr_info_content" action="{{ url_for('_signup_form_Address_info_') }}" method="POST">
+           <div class="left_addr_layout">
+              <h3> Permanent Address </h3><br><br>
+              <label for='P-H_Name' id='T-HName_label' class="lbl3"> House Name / No : </label>
+              <input type="text" id="P-H_Name" name="P-House_Name_input" class="txt3" ><br><br>
+              <label for='P-Pl_Name' id='T-Pl_name_label' class="lbl3"> Place : </label>
+              <input type="text" id="P-Pl_Name" name="P-Place_name_input" class="txt3" ><br><br>
+              <label for='P-Post_Name' id='T-Post_Name_label' class="lbl3"> Post office: </label>
+              <input type="text" id="P-Post_Name" name="P-Post_Name_input" class="txt3" ><br><br>
+              <label for='P-Pin_Code' id='T-Pin_code_label' class="lbl3"> Pin Code : </label>
+              <input type="text" id="P-Pin_Code" name="P-Pin_Code_input" class="txt3" ><br><br>
+              <label for='P-Village_Name' id='T-Village_label' class="lbl3"> Village : </label>
+              <input type="text" id="P-Village_Name" name="P-Village_input" class="txt3" ><br><br>
+              <label for='P-District_Name' id='T-District_label' class="lbl3"> District : </label>
+              <input type="text" id="P-District_Name" name="P-District_input" class="txt3" ><br><br>
+              <label for='P-MObile_No' id='T-Mobile_No_label' class="lbl3"> Mobile No : </label>
+              <input type="text" id="P-Mobile_No" name="P-Mobile_No_input" class="txt3" ><br><br>
+              <label for='P-Email_Id' id='T-Email_label' class="lbl3"> Email ID : </label>
+              <input type="text" id="P-Email_Id" name="P-Email_input" class="txt3" ><br><br
+           </div>
+           <div class="right_addr_layout">
+              <h3> Temporary Address </h3><br><br>
+              <label for='T-H_Name' id='HName_label' class="lbl4"> House Name / No : </label>
+              <input type="text" id="T-H_Name" name="T-House_Name_input" class="txt4" ><br><br>
+              <label for='T-Pl_Name' id='Pl_name_label' class="lbl4"> Place : </label>
+              <input type="text" id="T-Pl_Name" name="T-Place_name_input" class="txt4" ><br><br>
+              <label for='T-Post_Name' id='Post_Name_label' class="lbl4"> Post office: </label>
+              <input type="text" id="T-Post_Name" name="T-Post_Name_input" class="txt4" ><br><br>
+              <label for='T-Pin_Code' id='Pin_code_label' class="lbl4"> Pin Code : </label>
+              <input type="text" id="T-Pin_Code" name="T-Pin_Code_input" class="txt4" ><br><br>
+              <label for='T-Village_Name' id='Village_label' class="lbl4"> Village : </label>
+              <input type="text" id="T-Village_Name" name="T-Village_input" class="txt4" ><br><br>
+              <label for='T-District_Name' id='District_label' class="lbl4"> District : </label>
+              <input type="text" id="T-District_Name" name="T-District_input" class="txt4" ><br><br>
+              <label for='T-MObile_No' id='Mobile_No_label' class="lbl4"> Alternate Mobile No : </label>
+              <input type="text" id="T-Mobile_No" name="T-Mobile_No_input" class="txt4" ><br><br>
+              <label for='T-Email_Id' id='Email_label' class="lbl4"> Alternate Email ID : </label>
+              <input type="text" id="T-Email_Id" name="T-Email_input" class="txt4" ><br><br>
+           </div>
+         </form>
+        {% endblock %}
+      </div>
+      <div>
+         {% block btn_control %}
+            <span>
+               <button type="submit" id="back_to_personal" class="btn_signup_addr" formaction="{{ url_for('_signup_form_personal_info_') }}" formmethod="get" name="back_btn"> Back </button>
+            </span>
+            <span>
+               <button type="submit" id="next_to_qualification" form="signup_addr_info_content" class="btn_signup_addr"  name="next_btn"> Next </button>
+            </span>
+         {% endblock %}
+      </div>
+  </body>
+</html>

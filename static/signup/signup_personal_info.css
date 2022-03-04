@@ -1,0 +1,148 @@
+body {
+      background-color: rgb(54, 69, 60);
+      width: 85%;
+      border-width: 3px solid;
+      box-shadow: 10px 10px 20px black;
+      border-radius: 40px;
+      margin: 1% 7%;
+       padding: 2px 1px;
+      }
+
+
+#signup_head {
+      margin-left: 27%;
+      width: 45%;
+      height: 5%;
+      text-align: center;
+      box-shadow: 2px 6px 10px black;
+}
+
+.lbl{
+     color: white;
+     width: 15%;
+     height: 2%;
+     text-shadow: 2px 2px black;
+     position: absolute;
+     font-weight: bold;
+     left: 14%;
+
+ }
+
+ .lbl2{
+     color: white;
+     width: 15%;
+     height: 2%;
+     text-shadow: 2px 2px black;
+     position: absolute;
+     font-weight: bold;
+     left: 57%;
+     }
+
+.txt {
+     width: 13%;
+     height: 3.5%;
+     position: absolute;
+     left: 27%;
+     top: 18%
+     font-weight: bold;
+     border-radius: 10px;
+     padding: .2% .5% 0% .5%;
+
+}
+
+.txt2 {
+     width: 13%;
+     height: 3.5%;
+     position: absolute;
+     font-weight: bold;
+     border-radius: 10px;
+     left: 71%;
+     top: 10%
+     margin: 1%;
+     padding: .2% .5% 0% .5%;
+}
+
+.select_tab{
+     font-family: Times New Roman;
+     width: 8%;
+     text-align: center;
+     padding: .4% .5%;
+     border-radius: 10px;
+     position: relative;
+     top: 18%;
+     left: 23.5%;
+     font-weight: bolder;
+     font-size:  100%;
+     margin top: 1%;
+
+}
+
+.rdo_label{
+     position: relative;
+     left: 74.9%;
+     color: white;
+     text-shadow: 2px 2px black;
+     font-weight: bold;
+}
+
+.rdo_label2{
+     position: relative;
+     left: 67.5%;
+     color: white;
+     text-shadow: 2px 2px black;
+     font-weight: bold;
+}
+
+.rdo{
+     position: relative;
+     left: 75%;
+     color: black;
+
+}
+.rdo2{
+     position: relative;
+     left: 72.5%;
+     font-size: 15px;
+     width: 11%;
+     border-radius: 10px;
+     padding: 1.5px 1px;
+     color: black;
+     background-color: black;
+
+}
+
+#dob{
+    width: 10.5%;
+    font-weight: bold;
+    position: relative;
+    left: 75.4%;
+    padding: .3% .5% .1% .5%;
+    border-radius: 10px;
+    margin-bottom: -1.5%;
+}
+
+
+button{
+      width: 8%;
+      height: 3.9%;
+      padding: .5% .5%;
+      position: relative;
+      top: 1%;
+      left: 50%;
+      margin-top: .25%;
+      margin-bottom: 5%;
+      font-weight: bold;
+      box-shadow: 2px 2px 2px black;
+}
+
+#back{
+      width: 8%;
+      height: 3.9%;
+      padding: .5% .5%;
+      position: relative;
+      top: 1%;
+      left: 33%;
+      font-weight: bold;
+      box-shadow: 2px 2px 2px black;
+
+}

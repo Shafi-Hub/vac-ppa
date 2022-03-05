@@ -5,6 +5,9 @@ from mysql.connector import connect
 mydb = connect(host='localhost', user='root', password='SHA@123', database='demo1')
 mycursor = mydb.cursor()
 
+def signup_form_user_info():
+   pass
+
 
 def signup_form_Personal_info():
 
@@ -45,7 +48,7 @@ def signup_form_Address_info():
    POST_NAME_T = escape(request.form["T-Post_Name_input"])
    PIN_CODE_T = escape(request.form["T-Pin_Code_input"])
    VILLAGE_T = escape(request.form["T-Village_input"])
-   DISTRICT_T = escape(request.form["T-District_input"])ā
+   DISTRICT_T = escape(request.form["T-District_input"])
    MOBILE_NO_T = escape(request.form["T-Mobile_No_input"])
    EMAIL_T = escape(request.form["T-Email_input"])
 

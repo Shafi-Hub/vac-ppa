@@ -12,17 +12,21 @@
         <h1> Vaidyaratnam Ayurveda College & Hospital </h1>
     </div>
     <div id="login_frame">
+       {% block content %}
        <img id="emplom" src="{{ url_for('static', filename='/images/HomePage/emplom.png') }}"/><br>
          <form>
             <input type="text"  id="username" name="user"><br>
             <input type="password" id="password" name="passwd"><br>
             <button type="submit" id="login_btn" name="login">Login</button>
-            <button type="submit" id="signup_btn" formaction="{{ url_for('_signup_form_personal_info_') }}" name="signup"> Sign Up </button>
+            <button type="submit" id="signup_btn" formaction="{{ url_for('_signup_form_user_info_') }}" name="signup"> Sign Up </button>
          </form>
+       {% endblock %}
     </div>
+    {% block footer %}
     <div id="homepage_footer">
         <p><marquee scrollamount="6" >!!! This is a Demo WebApp, please co-operate with us....!!! if you have any queries please contact IT Administrator... !!! MUHAMMED SHAFI- 9633442041</marquee></p>
     </div>
+    {% endblock %}
 
 
 

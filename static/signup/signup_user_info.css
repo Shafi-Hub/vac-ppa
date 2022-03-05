@@ -1,0 +1,17 @@
+
+.psd_lbl{
+     color: white;
+     width: 40%;
+     position: absolute;
+     left: 5%;
+     margin-top: 2%;
+    }
+
+.psd_input{
+     width: 50%;
+     height: 4%;
+     padding: 1% .5% 1% .5%;
+     border-radius: 10px;
+     position: absolute;
+     left: 40%;
+    }

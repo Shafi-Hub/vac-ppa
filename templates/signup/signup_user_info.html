@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+     <link rel="stylesheet" href="{{ url_for('static', filename='signup/signup_user_info.css') }}">
+    <title>Registration-User_Type</title>
+ </head>
+ <body>
+   {% extends 'index.html' %}
+   {% block content %}
+   <div id="user_passwd_crt">
+     <label for="crt_passwd" id="crt_passwd_lbl" class="psd_lbl"> Create Password : </label>
+     <input type="text" id="crt_passwd" class="psd_input"><br><br>
+     <label for="cnfrm_passwd" id="cnfrm_passwd_lbl" class="psd_lbl"> Confirm Password : </label>
+     <input type="text" id="cnfrm_passwd" class="psd_input">
+   </div>
+   {% endblock %}
+   {% block footer %}
+   {% endblock %}
+ </body>
+</html>

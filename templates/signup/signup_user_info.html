@@ -8,11 +8,24 @@
  <body>
    {% extends 'index.html' %}
    {% block content %}
-   <div id="user_passwd_crt">
-     <label for="crt_passwd" id="crt_passwd_lbl" class="psd_lbl"> Create Password : </label>
-     <input type="text" id="crt_passwd" class="psd_input"><br><br>
-     <label for="cnfrm_passwd" id="cnfrm_passwd_lbl" class="psd_lbl"> Confirm Password : </label>
-     <input type="text" id="cnfrm_passwd" class="psd_input">
+   <div id="user_passwd_frame">
+     <form>
+       <div>
+           <h3 id="pass_head"> Security </h3>
+       </div>
+       <label for="crt_passwd_input" id="crt_passwd_lbl" class="psd_lbl"> Create Password : </label>
+       <input type="text" id="crt_passwd_input" class="psd_input"><br><br>
+       <label for="cnfrm_passwd_input" id="cnfrm_passwd_lbl" class="psd_lbl"> Confirm Password : </label>
+       <input type="text" id="cnfrm_passwd_input" class="psd_input"><br><br>
+
+       <label for="user_type" id="user_type_lbl" class="usr_typ"> User Type : </label>
+         <input type="radio" id="user_type" class="usr_typ">
+         <label id="employee"> Employee </label>
+         <input type="radio" id="user_type" class="usr_typ">
+         <label id="student"> Student </label>
+     </form>
+     <button id="btn_passwd_back" class="btn_passwd"> Back</button>
+     <button id="btn_passwd_next" class="btn_passwd"> Next </button>
    </div>
    {% endblock %}
    {% block footer %}

@@ -1,17 +1,67 @@
 
+#user_passwd_frame{
+    width: 50%;
+    height: 60%;
+    background-color: rgba(135, 176, 152, 0.2);
+    box-shadow: 2px 2px 20px black;
+    position: absolute;
+    left: 24%;
+    top: 25%;
+    }
+
+#pass_head{
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 20px black;
+    width: 80%;
+    height: 5%;
+    padding: 1% 1%;
+    background-color: rgba(135, 176, 152, 0.2);
+    box-shadow: 2px 2px 20px black;
+    margin-left: 8%;
+    }
+
 .psd_lbl{
+     text-shadow: 2px 2px 20px black;
      color: white;
-     width: 40%;
-     position: absolute;
-     left: 5%;
-     margin-top: 2%;
+     width: 20%;
+     position: relative;
+     left: 23%;
+     margin-top: 5%;
     }
 
 .psd_input{
-     width: 50%;
+     width: 25%;
      height: 4%;
-     padding: 1% .5% 1% .5%;
+     padding: .5% 1% .5% 1%;
      border-radius: 10px;
-     position: absolute;
-     left: 40%;
+     position: relative;
+     left: 23%;
+     margin: 2% 2%;
     }
+
+.usr_typ {
+     text-shadow: 2px 2px 20px black;
+     color: white;
+     width: 10%;
+     position: relative;
+     left: 24%;
+     margin-top: 3%;
+    }
+
+#crt_passwd_lbl{
+    top: 30%;
+    }
+
+#crt_passwd_input{
+    top: 30%;
+    left: 25%;
+    }
+
+.btn_passwd{
+    position:relative;
+    left: 35%;
+    top: 15%;
+    padding: .5% 1%;
+    margin-bottom: 3%;
+}
